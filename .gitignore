@@ -1,0 +1,18 @@
+# OS / editors
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.pyc
+
+# Outputs
+out/
+logs/
+captures/
+*.log
+*.pcap
+*.pcapng
+*.csv

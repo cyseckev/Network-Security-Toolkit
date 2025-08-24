@@ -1,0 +1,14 @@
+[Unit]
+Description=Network Security Toolkit - Rotating capture
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/env bash -c '/opt/Network-Security-Toolkit/toolkit/capture_rotate.sh eth0 "tcp or udp"'
+WorkingDirectory=/opt/Network-Security-Toolkit
+User=root
+Group=root
+Restart=on-failure
+StandardOutput=journal
+StandardError=journal
